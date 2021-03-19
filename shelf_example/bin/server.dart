@@ -4,6 +4,7 @@ import 'package:args/args.dart';
 import 'package:shelf/shelf.dart' as shelf;
 import 'package:shelf/shelf_io.dart' as io;
 import 'package:shelf_example/handlers/handler.dart';
+import 'package:shelf_static/shelf_static.dart';
 
 // For Google Cloud Run, set _hostname to '0.0.0.0'.
 const _hostname = 'localhost';
@@ -22,8 +23,11 @@ void main(List<String> args) async {
     exitCode = 64;
     return;
   }
+  var staticHandler = createStaticHandler('public');
 
-  var cascadeHandler = shelf.Cascade().add((request) {
+  var cascadeHandler = shelf.Cascade()
+      .add((request) async => staticHandler.call(request))
+      .add((request) {
     if (request.handlerPath == '/') {
       return indexHandler(request);
     } else {

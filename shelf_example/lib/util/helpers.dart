@@ -22,7 +22,7 @@ class RenderTamplate {
     _loadTemplates(viewsPath);
   }
 
-  void _loadTemplates(String temPlatepath) {
+  void _loadTemplates(String templatePath) {
     final dir = path.join(current.path, viewsPath);
 
     // print(dir);
@@ -31,16 +31,16 @@ class RenderTamplate {
         .whereType<File>()
         .where((f) => f.path.endsWith('.mustache'))
         .forEach((file) {
-      final relativePath = path.relative(file.path, from: temPlatepath);
+      final relativePath = path.relative(file.path, from: templatePath);
       final name = path.withoutExtension(relativePath);
       templates[name] = mustache.Template(file.readAsStringSync());
     });
   }
 
   String renderTemaplate(String name, Map<String, Object> values) {
-    final parsedTemaplate = templates[name];
+    final parsedTemaplate = templates[name]; /// fetches the particular file, for example, home.mustache.
     try {
-      print(templates);
+      // print(templates);
       return parsedTemaplate.renderString(values);
     } on mustache.TemplateException catch (e, st) {
       print(e);
@@ -50,7 +50,7 @@ class RenderTamplate {
 }
 
 Future<Map<String, dynamic>> loadJsonFile() async {
-  final jsonData = await File('static/videos.json')
+  final jsonData = await File('public/videos.json')
       .readAsString()
       .then((fileContents) => json.decode(fileContents));
 
