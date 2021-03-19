@@ -1,6 +1,14 @@
 .banner-bg {
   background: blue;
-  height: 0.5em;
-  width: 100vw; }
+  background-image: url("/img/hero-bg-static.svg");
+  height: 400px;
+  width: 100vw;
+  background-size: cover;
+  color: blue;
+  padding: 10px 0px;
+}
 
+.banner-bg a {
+  color: blue;
+}
 /*# sourceMappingURL=style.css.map */
