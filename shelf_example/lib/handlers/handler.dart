@@ -13,7 +13,6 @@ final renderTemplate = RenderTamplate.instance;
 /// Handles the request for /
 Future<shelf.Response> indexHandler(shelf.Request request) async {
   final data = await loadJsonFile();
-  final res = renderTemplate.renderTemaplate('home', data['flutter_europe'][0]);
+  final res = renderTemplate.renderTemaplate('home', data);
   return htmlResponse(res);
 }
-

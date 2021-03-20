@@ -1,12 +1,110 @@
 {
+  "titles": [
+    {
+      "title": "FlutterEurope 2020",
+      "link": "https://youtu.be/GJZVsrGfQVM"
+    }
+  ],
   "flutter_europe": [
     {
-      "title": "FlutterEurope 2020",
-      "link": "https://youtu.be/GJZVsrGfQVM"
+      "title": "Flutter, what are Widgets, RenderObjects and Elements? - Norbert Kozsir",
+      "link": "https://www.youtube.com/embed/PnWxW21vDak"
     },
     {
-      "title": "FlutterEurope 2020",
-      "link": "https://youtu.be/GJZVsrGfQVM"
+      "title": "Flutter for desktop - what is it good for? Dominik Roszkowski",
+      "link": "https://www.youtube.com/embed/ri4V8CjCKbY"
+    },
+    {
+      "title": "Navigator and Routes and Transitions... Oh, My! - Simon Lightfoot",
+      "link": "https://www.youtube.com/embed/4CYTTW6PMoc"
+    },
+    {
+      "title": "Building Voice-First Flutter apps - Elaine Dias Batista",
+      "link": "https://www.youtube.com/embed/L-c-ZyX-KtY"
+    },
+    {
+      "title": "Performance: Optimizing your Flutter app - Filip Hráček",
+      "link": "https://www.youtube.com/embed/SQcmrl_NkqY"
+    },
+    {
+      "title": "Multiplatform Flutter. Building Adaptive UI - Alexandr Denisov",
+      "link": "https://www.youtube.com/embed/2pzzm_PWhmI"
+    },
+    {
+      "title": "Everything you need to know about Provider - Rémi Rousselet",
+      "link": "https://www.youtube.com/embed/BulIREvHBWg"
+    },
+    {
+      "title": "Implementing complex UI with Flutter - Marcin Szałek",
+      "link": "https://www.youtube.com/embed/FCyoHclCqc8"
+    },
+    {
+      "title": "Server-Side Steroids for your Flutter App! - Chirag Shenoy",
+      "link": "https://www.youtube.com/embed/Wi5pXmrMXyw"
+    },
+    {
+      "title": "Strategic Domain-Driven Design for Improving Flutter architecture - Majid Hajian",
+      "link": "https://www.youtube.com/embed/lGv6KV5u75k"
+    },
+    {
+      "title": "The Tale of RxDart - Brian Egan",
+      "link": "https://www.youtube.com/embed/Wfc5LMgWaRA"
+    },
+    {
+      "title": "Augmented Reality in Flutter - Oleksandr Leuschenko",
+      "link": "https://www.youtube.com/embed/lmiRYar996w"
+    },
+    {
+      "title": "Lessons learned building the Invoice Ninja Flutter app - Hillel Coren",
+      "link": "https://www.youtube.com/embed/G30K5wm7j_M"
+    },
+    {
+      "title": "Testing Flutter Applications - Rafał Ślósarz ",
+      "link": "https://www.youtube.com/embed/vl0CbG_-Ny8"
+    },
+    {
+      "title": "Animations in Flutter Done Right - Emily Fortuna & Andrew Fitz Gibbon",
+      "link": "https://www.youtube.com/embed/pq791sJtWBQ"
+    },
+    {
+      "title": "Flutter at scale - Jorge Coca",
+      "link": "https://www.youtube.com/embed/fV2arkltlOs"
+    },
+    {
+      "title": "Painting with Rive and Flutter - Umberto Sonnino",
+      "link": "https://www.youtube.com/embed/FY9f34a0tV8"
+    },
+    {
+      "title": "Forms with Flutter - Roberta Goodhead",
+      "link": "https://www.youtube.com/embed/W3rilPv69lM"
+    },
+    {
+      "title": "Bloc Library: Basics & Beyond - Felix Angelov",
+      "link": "https://www.youtube.com/embed/knMvKPKBzGE"
+    },
+    {
+      "title": "CI/CD in Flutter - Priit Lätt",
+      "link": "https://www.youtube.com/embed/D9NrtLOJsWc"
+    },
+    {
+      "title": "Bring Flutter to web - Rihanna Kedir",
+      "link": "https://www.youtube.com/embed/EKOHizxc4bo"
+    },
+    {
+      "title": "Building games using Flame - Luan Nico & Renan C. Araújo",
+      "link": "https://www.youtube.com/embed/sFpjEH-ok2s"
+    },
+    {
+      "title": "Apps for Everyone with Flutter - Lara Martin & Miguel Beltran",
+      "link": "https://www.youtube.com/embed/Ywgt3cRKyrs"
+    },
+    {
+      "title": "How to convince business to Flutter? - Łukasz Kosman & Mateusz Wojtczak",
+      "link": "https://www.youtube.com/embed/bE2xqtl0Jhw"
+    },
+    {
+      "title": "The Art of Code - Dylan Beattie",
+      "link": "https://www.youtube.com/embed/uNjp0gS8x_k"
     }
   ]
 }
