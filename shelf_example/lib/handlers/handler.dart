@@ -16,3 +16,17 @@ Future<shelf.Response> indexHandler(shelf.Request request) async {
   final res = renderTemplate.renderTemaplate('home', data);
   return htmlResponse(res);
 }
+
+/// Handles the request for /engage
+Future<shelf.Response> engageHandler(shelf.Request request) async {
+  final data = await loadJsonFile();
+  final res = renderTemplate.renderTemaplate('engage', data);
+  return htmlResponse(res);
+}
+
+/// Handles the request for /europe
+Future<shelf.Response> europeHandler(shelf.Request request) async {
+  final data = await loadJsonFile();
+  final res = renderTemplate.renderTemaplate('europe', data);
+  return htmlResponse(res);
+}

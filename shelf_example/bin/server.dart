@@ -23,20 +23,34 @@ void main(List<String> args) async {
     exitCode = 64;
     return;
   }
-  var staticHandler = createStaticHandler('public');
 
-  var cascadeHandler = shelf.Cascade()
+  /// static handler to serve css and json files placed in the public directory
+  final staticHandler = createStaticHandler('public');
+
+  final cascadeHandler = shelf.Cascade()
       .add((request) async => staticHandler.call(request))
       .add((request) {
-    if (request.handlerPath == '/') {
+    if (request.url.path == '') {
       return indexHandler(request);
+    } else {
+      return shelf.Response.notFound('Error Not Fund');
+    }
+  }).add((request) {
+    if (request.url.path == 'engage') {
+      return engageHandler(request);
+    } else {
+      return shelf.Response.notFound('Error Not Fund');
+    }
+  }).add((request) {
+    if (request.url.path == 'europe') {
+      return europeHandler(request);
     } else {
       return shelf.Response.notFound('Error Not Fund');
     }
   }).handler;
 
   var handler = const shelf.Pipeline()
-      .addMiddleware(shelf.logRequests())
+      // .addMiddleware(shelf.logRequests())
       .addHandler(cascadeHandler);
 
   var server = await io.serve(handler, _hostname, port);
