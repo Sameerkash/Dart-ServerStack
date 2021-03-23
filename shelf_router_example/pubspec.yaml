@@ -7,7 +7,7 @@ environment:
 
 dependencies:
   args: ^1.6.0
-  shelf: ^0.7.5
+  shelf: ^1.0.0
   shelf_router: ^1.0.0
 
 dev_dependencies:

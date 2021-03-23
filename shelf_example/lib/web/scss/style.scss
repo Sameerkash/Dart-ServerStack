@@ -1,12 +1,46 @@
+*,
+html,
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+  //  overflow-y: hidden;
+}
+
 .banner-bg {
-  background: blue;
-  background-image: url("/img/hero-bg-static.svg");
-  height: 400px;
-  width: 100vw;
-  background-size: cover;
-  color: blue;
-  padding: 10px 0px;
-  a {
-    color: blue;
+  min-height: 50vh;
+  min-width: 100vw;
+  margin-bottom: 2rem;
+  background-image: url(/img/hero-bg-static.svg);
+  display: flex;
+  justify-content: center;
+}
+
+.banner-title {
+  align-self: center;
+  font-size: 2em;
+
+  h1,
+  h3 {
+    color: white;
+    padding: 1rem;
+    text-align: center;
   }
+}
+
+.video-section {
+  margin: 0 0 0 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 10px 0;
+}
+
+div:nth-child(odd) .video-align {
+  float: left;
+}
+
+div:nth-child(even) .video-align {
+  float: right;
 }
