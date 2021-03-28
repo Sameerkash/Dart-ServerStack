@@ -1,29 +1,18 @@
-import 'dart:io';
-
-import 'package:args/args.dart';
-import 'package:shelf/shelf.dart' as shelf;
+import 'package:shelf/shelf.dart';
 import 'package:shelf/shelf_io.dart' as io;
+import 'package:shelf_router/shelf_router.dart';
+import 'package:shelf_router_example/film_api.dart';
+import 'package:shelf_router_example/packages.dart';
 
-// For Google Cloud Run, set _hostname to '0.0.0.0'.
-const _hostname = 'localhost';
+void main(List<String> arguments) async {
+  final app = Router();
 
-void main(List<String> args) async {
-  var parser = ArgParser()..addOption('port', abbr: 'p');
-  var result = parser.parse(args);
+  app.mount('/api/', Packages().router);
 
-  var portStr = result['port'] ?? Platform.environment['PORT'] ?? '8080';
-  var port = int.tryParse(portStr);
+  app.get('/<name|.*>', (Request request, String name) {
+    final param = name.isNotEmpty ? name : 'World';
+    return Response.ok('Hello $param!');
+  });
 
-  if (port == null) {
-    stdout.writeln('Could not parse port value "$portStr" into a number.');
-    // 64: command line usage error
-    exitCode = 64;
-    return;
-  }
-
-  // var handler =
-  // const shelf.Pipeline().addMiddleware(shelf.logRequests()).addHandler();
-
-  // var server = await io.serve(handler, _hostname, port);
-  // print('Serving at http://${server.address.host}:${server.port}');
+  await io.serve(app, 'localhost', 8083);
 }

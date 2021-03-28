@@ -5,7 +5,6 @@ body {
   margin: 0;
   box-sizing: border-box;
   font-family: "Open Sans", sans-serif;
-  //  overflow-y: hidden;
 }
 
 .banner-bg {
@@ -34,13 +33,46 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 10px 0;
+  padding: 10px 10px 10px;
+  list-style-type: none;
 }
 
-div:nth-child(odd) .video-align {
-  float: left;
+ul li {
+  margin-bottom: 20px;
+  margin-top: 20px;
+  text-align: left;
 }
 
-div:nth-child(even) .video-align {
-  float: right;
+ul li:nth-child(2n) {
+  text-align: right;
+}
+
+ul li:nth-child(2n + 1) {
+  text-align: left;
+}
+.category-align-parent {
+  display: flex;
+  text-align: center;
+  flex-direction: row;
+}
+
+.category-align-children :nth-child(2n + 1) {
+  width: 40%;
+  display: inline-block;
+  flex-direction: column;
+}
+.category-align-children :nth-child(2n) {
+  width: 40%;
+  display: inline-block;
+  flex-direction: column;
+}
+
+.horizontal-container {
+  display: flex;
+}
+.pic-caption-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 50%;
 }

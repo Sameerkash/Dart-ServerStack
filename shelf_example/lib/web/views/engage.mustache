@@ -5,23 +5,26 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <base href="/">
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/style.css?v=1.1">
     <title>Flutter Conferences</title>
 </head>
 
+
 <body>
-    {{#flutter_engage}}
+    <div class="category-align-parent">
+        <div class="category-align-children">
 
-    <iframe width="600" height="400" src={{link}}?rel=0&modestbranding=1&autohide=1&showinfo=0 frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen></iframe>
-    <div>
-        {{title}}
-        {{link}}
+            {{#flutter_engage}}
+            <iframe width="600" height="400" src={{link}}?rel=0&modestbranding=1&autohide=1&showinfo=0 frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+            <p>
+                {{title}}
+            </p>
+            {{/flutter_engage}}
+
+        </div>
     </div>
-
-    {{/flutter_engage}}
 </body>
 
 </html>
