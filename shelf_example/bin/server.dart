@@ -50,7 +50,7 @@ void main(List<String> args) async {
   }).handler;
 
   var handler = const shelf.Pipeline()
-      // .addMiddleware(shelf.logRequests())
+      .addMiddleware(shelf.logRequests())
       .addHandler(cascadeHandler);
 
   var server = await io.serve(handler, _hostname, port);

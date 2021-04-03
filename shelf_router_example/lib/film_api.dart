@@ -10,11 +10,6 @@ class FilmApi {
   Router get router {
     final router = Router();
 
-    router.get('/', (Request request) {
-      return Response.ok(json.encode(data),
-          headers: {'Content-Type': 'application/json'});
-    });
-
     router.get('/<id|[0-9]+>', (Request request, String id) {
       final parsedId = int.tryParse(id);
       final film =
@@ -28,6 +23,10 @@ class FilmApi {
       return Response.notFound('Film not found.');
     });
 
+    router.get('/', (Request request) {
+      return Response.ok(json.encode(data),
+          headers: {'Content-Type': 'application/json'});
+    });
     router.post('/', (Request request) async {
       final payload = await request.readAsString();
       data.add(json.decode(payload));

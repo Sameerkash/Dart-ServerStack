@@ -37,8 +37,11 @@ class RenderTamplate {
     });
   }
 
+  // ignore: missing_return
   String renderTemaplate(String name, Map<String, Object> values) {
-    final parsedTemaplate = templates[name]; /// fetches the particular file, for example, home.mustache.
+    final parsedTemaplate = templates[name];
+
+    /// fetches the particular file, for example, home.mustache.
     try {
       // print(templates);
       return parsedTemaplate.renderString(values);
