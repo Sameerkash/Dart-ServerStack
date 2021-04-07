@@ -2,11 +2,13 @@
   "titles": [
     {
       "title": "FlutterEurope 2020",
-      "link": "https://www.youtube.com/embed/GJZVsrGfQVM"
+      "link": "https://www.youtube.com/embed/GJZVsrGfQVM",
+      "description": "Flutter is an expressive tool that supports immediate iteration (through hot reload). This makes it a good fit for the elusive designer-developer: an engineer with a knack for design. In this talk, Filip explores some of the basics of good app design and how they translate to Flutter widgets.      "
     },
     {
       "title": "Flutter Engage Mashup",
-      "link": "https://www.youtube.com/embed/A3ltMaM6noM"
+      "link": "https://www.youtube.com/embed/A3ltMaM6noM",
+      "description": "Flutter is an expressive tool that supports immediate iteration (through hot reload). This makes it a good fit for the elusive designer-developer: an engineer with a knack for design. In this talk, Filip explores some of the basics of good app design and how they translate to Flutter widgets."
     }
   ],
   "flutter_europe": [
@@ -115,27 +117,33 @@
   "flutter_engage": [
     {
       "title": "Keynote (Flutter Engage)",
-      "link": "https://www.youtube.com/embed/zSbsIiluixw"
+      "link": "https://www.youtube.com/embed/zSbsIiluixw",
+      "description": "In our opening Keynote, the Flutter team shares exciting news, demos and features coming to Flutter. Learn more about Flutter 2 and what updates like Null Safety can do for you. You’ll also hear from companies like Microsoft, Canonical and Toyota as they share the incredible things they’re doing with Flutter."
     },
     {
       "title": "Let's migrate this app to null safety",
-      "link": "https://www.youtube.com/embed/bvq7wbn4VAA"
+      "link": "https://www.youtube.com/embed/bvq7wbn4VAA",
+      "description": "Migrating a Flutter app to null safety can be surprisingly painless. Leaf Petersen demonstrates how to use pub to find out if you're ready to migrate, and how to effectively use the new Dart migration tool to quickly get your app up and running with full sound null safety"
     },
     {
       "title": "From mobile app to web app",
-      "link": "https://www.youtube.com/embed/HAstl_NkXl0"
+      "link": "https://www.youtube.com/embed/HAstl_NkXl0",
+      "description": "Join Mariam Hasnany and John Ryan as they upgrade their mobile app into a web app.  Learn how to adapt your app for desktop browsers, how to debug, and how to deploy your app to a web server. "
     },
     {
       "title": "The little things: Becoming the mythical designer-developer",
-      "link": "https://www.youtube.com/embed/MIepaf7ks40"
+      "link": "https://www.youtube.com/embed/MIepaf7ks40",
+      "description": "Flutter is an expressive tool that supports immediate iteration (through hot reload). This makes it a good fit for the elusive designer-developer: an engineer with a knack for design. In this talk, Filip explores some of the basics of good app design and how they translate to Flutter widgets.      "
     },
     {
       "title": "Monetizing apps with Flutter",
-      "link": "https://www.youtube.com/embed/m0d_pbgeeG8"
+      "link": "https://www.youtube.com/embed/m0d_pbgeeG8",
+      "description": "The only thing better than building apps is making a living by building apps. In this talk, Zoey and Andrew from the Flutter team talk about monetization strategies for apps built with Flutter, and how you can turn a successful app into a successful business"
     },
     {
       "title": "AskFlutter​ leadership roundtable",
-      "link": "https://www.youtube.com/embed/1uZFaAncYu8"
+      "link": "https://www.youtube.com/embed/1uZFaAncYu8",
+      "description": "Andrew Brogdon, Eric Seidel (Flutter's Director of Engineering ), Ian Hickson (Flutter's Tech Lead), Mariam Hasnany (Flutter Product Manager), and Frank Van Puffelen (Lead Engineer, Firebase DevRel) sat down together for a live Q&A during the Flutter Engage livestream.      "
     }
   ]
 }

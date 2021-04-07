@@ -1,0 +1,9 @@
+{
+  "verbose": false,
+  "watch": ["bin", "lib"],
+  "ext": "dart",
+  "exec": "dart bin/server.dart",
+  "execMap": {
+    "dart": "dart"
+  }
+}

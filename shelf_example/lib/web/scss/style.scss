@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;1,300&family=Raleway&display=swap");
+
 *,
 html,
 body {
@@ -37,6 +39,11 @@ body {
   list-style-type: none;
 }
 
+.video-section-description {
+  display: flex;
+  flex-direction: row;
+}
+
 ul li {
   margin-bottom: 20px;
   margin-top: 20px;
@@ -69,4 +76,10 @@ ul li:nth-child(2n + 1) {
 
 .child2-video {
   width: 25%;
+  font-family: "Raleway", sans-serif;
+  font-size: 1.5em;
+  border: #1565c0;
+  color: #1565c0;
+  border-style: solid;
+  padding: 15px;
 }
