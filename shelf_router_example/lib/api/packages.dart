@@ -24,7 +24,8 @@ class Packages {
     });
 
     /// Get endpoint to list all packages available
-    router.get('/packages/', (request) {
+    router.get('/packages/', (Request request) {
+      print(request.requestedUri);
       return Response.ok(json.encode(data), headers: headers);
     });
 
