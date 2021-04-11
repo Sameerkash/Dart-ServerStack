@@ -1,14 +1,259 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
 
-html, body {
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
   width: 100%;
   height: 100%;
   margin: 0;
   padding: 0;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
-#output {
-  padding: 20px;
+.bg {
+  height: 500px;
+  align-content: center;
+  display: flex;
+  justify-items: center;
+  align-items: center;
+}
+
+.packages {
+  display: flex;
+  flex-direction: inherit;
+  flex-wrap: wrap;
+  padding: 2% 1% 2% 5%;
+
+  /* flex-direction: row; */
+}
+
+.package {
+  border-radius: 10px;
+  width: 300px;
+  height: 173px;
+  padding-top: 2%;
+  font-size: 23px;
+  text-align: center;
+  display: inline;
+  background-color: rgb(80, 150, 235);
+  color: white;
+  margin: 1%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
+  transition: 0.3s;
+}
+
+.package:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.7);
+}
+
+/* .header {
+  background-image: url(https://pub.dev/static/img/hero-bg-static.svg?hash=pvblnkq8qgr4g10hr78tnibbr2qdpuqt);
+  background-size: cover;
+} */
+
+/* Banner section */
+.container {
+  width: 60%;
+  padding-top: 5%;
+  margin: 0px auto;
+}
+
+.banner {
+  background-image: url(https://pub.dev/static/img/hero-bg-static.svg?hash=pvblnkq8qgr4g10hr78tnibbr2qdpuqt);
+  width: 100%;
+  height: 50vh;
+}
+
+.content {
+  color: aliceblue;
+  width: 55%;
+}
+
+/* Search bar */
+body {
+  background: #f2f2f2;
+  font-family: "Open Sans", sans-serif;
+}
+
+.search {
+  width: 80%;
+  height: 80px;
+  position: relative;
+  display: flex;
+}
+
+.searchTerm {
+  width: 80%;
+  height: 80px;
+  border: 3px solid rgb(97, 156, 228);
+  border-right: none;
+  padding: 3%;
+  border-radius: 50px 0 0 50px;
+  outline: none;
+  font-size: 25px;
+  color: #f7f7f769;
+}
+
+.searchTerm:focus {
+  color: #0e0f0f;
+}
+
+.searchButton {
+  width: 40px;
+  height: 80px;
+  border: 1px solid #00b4cc;
+  background: #00b4cc;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.173);
+  border-radius: 0 50px 50px 0;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+/*Resize the wrap to see the search bar change!*/
+/* .wrap {
+  width: 30%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+} */
+/* body {
+  background-color: #f2f2f2;
+  font-family: "RobotoDraft", "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+h5 {
+  margin: 0px;
+  font-size: 1.4em;
+  font-weight: 700;
+}
+
+p {
+  font-size: 12px;
+}
+
+.center {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* End Non-Essential  */
+
+/* .property-card {
+  height: 18em;
+  width: 14em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  position: relative;
+  -webkit-transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -o-transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  border-radius: 16px;
+  overflow: hidden;
+  -webkit-box-shadow: 15px 15px 27px #e1e1e3, -15px -15px 27px #ffffff;
+  box-shadow: 15px 15px 27px #e1e1e3, -15px -15px 27px #ffffff;
+}
+/* ^-- The margin bottom is necessary for the drop shadow otherwise it gets clipped in certain cases. */
+
+/* Top Half of card, image. */
+
+.property-image {
+  height: 6em;
+  width: 14em;
+  padding: 1em 2em;
+  position: Absolute;
+  top: 0px;
+  -webkit-transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -o-transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  background-image: url("https://cdn.photographylife.com/wp-content/uploads/2017/01/What-is-landscape-photography.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* Bottom Card Section */
+/*
+.property-description {
+  background-color: #fafafc;
+  height: 12em;
+  width: 14em;
+  position: absolute;
+  bottom: 0em;
+  -webkit-transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -o-transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  padding: 0.5em 1em;
   text-align: center;
 }
+
+/* Social Icons */
+/* 
+.property-social-icons {
+  width: 1em;
+  height: 1em;
+  background-color: black;
+  position: absolute;
+  bottom: 1em;
+  left: 1em;
+  -webkit-transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -o-transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+} */
+
+/* Property Cards Hover States */
+/* 
+.property-card:hover .property-description {
+  height: 0em;
+  padding: 0px 1em;
+}
+.property-card:hover .property-image {
+  height: 18em;
+}
+
+.property-card:hover .property-social-icons {
+  background-color: white;
+}
+
+.property-card:hover .property-social-icons:hover {
+  background-color: blue;
+  cursor: pointer;
+} */
+
+/* Optional
+
+.property-image-title
+{
+text-align:center;
+position:Relative;
+top:30%;
+opacity:0;
+transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1) 0.2s;
+color:black;
+font-size:1.2em;
+}
+
+.property-card:hover .property-image-title
+{
+opacity:1;
+}
+
+*/

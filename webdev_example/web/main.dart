@@ -2,7 +2,11 @@ import 'dart:convert';
 import 'dart:html';
 import 'package:http/http.dart' as http;
 
-UListElement pacakges = querySelector('#packages');
+DivElement pacakges = querySelector('#packages');
+DivElement versions = querySelector('#versions');
+
+ParagraphElement title = querySelector('#title');
+
 void main() {
   fetchPackages();
 }
@@ -26,6 +30,9 @@ void requestComplete(http.Response response) {
 
 void listPackages(String json) {
   for (final p in jsonDecode(json)) {
-    pacakges.children.add(LIElement()..text = p['name']);
+    pacakges.children.add(DivElement()
+      ..text = p['name']
+      ..className = 'package'
+      ..children.add(ParagraphElement()..text = p['version']));
   }
 }

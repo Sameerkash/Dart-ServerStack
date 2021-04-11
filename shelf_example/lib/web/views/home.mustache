@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/style.css?v=1.2">
+    <link rel="stylesheet" href="/css/style.css?v=1.1">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
     <title>Flutter Conferences</title>
@@ -19,21 +19,26 @@
         </div>
 
     </div>
-    <ul class="video-section">
-        <div class="video-section-description">
+    <div class="video-section">
+        <ul>
             {{#titles}}
-            <li class="video-align">
-                <iframe width="600" height="400" src={{link}}?rel=0&modestbranding=1&autohide=1&showinfo=0
-                    frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen></iframe>
-                <p>
-                    {{description}}
-                </p>
+            <li>
+                <div id="video-align">
+                    <iframe width="1500" height="400" src={{link}}?rel=0&modestbranding=1&autohide=1&showinfo=0
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                    <p class="p-align">
+                        {{description}}
+                        <br> <br>
+                        <a href={{route}} class="btn">View More!</a>
+                    </p>
+
+
+                </div>
             </li>
             {{/titles}}
-        </div>
-    </ul>
+        </ul>
     </div>
 </body>
 

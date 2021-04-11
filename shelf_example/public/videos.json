@@ -3,11 +3,13 @@
     {
       "title": "FlutterEurope 2020",
       "link": "https://www.youtube.com/embed/GJZVsrGfQVM",
+      "route": "/europe",
       "description": "Flutter is an expressive tool that supports immediate iteration (through hot reload). This makes it a good fit for the elusive designer-developer: an engineer with a knack for design. In this talk, Filip explores some of the basics of good app design and how they translate to Flutter widgets.      "
     },
     {
       "title": "Flutter Engage Mashup",
       "link": "https://www.youtube.com/embed/A3ltMaM6noM",
+      "route": "/engage",
       "description": "Flutter is an expressive tool that supports immediate iteration (through hot reload). This makes it a good fit for the elusive designer-developer: an engineer with a knack for design. In this talk, Filip explores some of the basics of good app design and how they translate to Flutter widgets."
     }
   ],

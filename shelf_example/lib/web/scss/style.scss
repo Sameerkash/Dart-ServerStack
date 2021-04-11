@@ -1,6 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;1,300&family=Raleway&display=swap");
 
-*,
 html,
 body {
   padding: 0;
@@ -33,21 +32,30 @@ body {
 .video-section {
   margin: 0 0 0 2rem;
   display: flex;
+  width: -webkit-fill-available;
   flex-direction: column;
   justify-content: space-between;
   padding: 10px 10px 10px;
   list-style-type: none;
 }
 
-.video-section-description {
+#video-align {
   display: flex;
+  text-align: -webkit-center;
   flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.p-align {
+  align-items: center;
+  justify-content: center;
 }
 
 ul li {
+  list-style-type: none;
   margin-bottom: 20px;
   margin-top: 20px;
-  text-align: left;
 }
 
 ul li:nth-child(2n) {
@@ -82,4 +90,34 @@ ul li:nth-child(2n + 1) {
   color: #1565c0;
   border-style: solid;
   padding: 15px;
+}
+
+p {
+  width: 50%;
+  font-family: "Raleway", sans-serif;
+  font-size: 1.5em;
+  border: #1565c0;
+  color: #1565c0;
+  border-style: solid;
+  padding: 15px;
+  text-align: justify;
+}
+
+.p-align {
+  display: flex;
+  flex-direction: column;
+  margin: 3%;
+  align-items: center;
+}
+
+.btn {
+  font-size: 1rem;
+  color: white;
+  background: #1565c0;
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+
+a {
+  text-decoration: none;
 }
