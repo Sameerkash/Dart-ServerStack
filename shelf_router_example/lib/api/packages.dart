@@ -10,10 +10,9 @@ class Packages {
   /// Instance of the json file acting as a database.
   static final File packagesJson = File('packages.json');
 
-  /// intitialize the list of data points
+  /// intitialize the list of data
   final List data = json.decode(packagesJson.readAsStringSync());
 
-  /// Router getter
   Router get router {
     final router = Router();
 
@@ -37,8 +36,11 @@ class Packages {
     });
 
     /// Post ednpoint to add a package to the list of packages
-    router.post('/packages', (request) async {
+    router.post('/packages/', (request) async {
       final payload = await request.readAsString();
+      if (payload.isEmpty || payload == null) {
+        return Response.forbidden('Pleas enter valid package details');
+      }
       data.add(json.decode(payload));
       packagesJson.writeAsStringSync(json.encode(data));
       return Response.ok(json.encode(data), headers: headers);
@@ -46,7 +48,7 @@ class Packages {
 
     /// Delete endpoint to delete a package specified by name, headers must contain admin token
     router.delete('/packages/<name>', (Request request, String name) {
-      final isAdmin = request.headers['isAdmin'].parseBool() ?? false;
+      final isAdmin = request.headers['isAdmin']?.parseBool() ?? false;
 
       if (isAdmin) {
         data.removeWhere((p) => p['name'] == name);

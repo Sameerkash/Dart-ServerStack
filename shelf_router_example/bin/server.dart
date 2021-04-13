@@ -20,7 +20,7 @@ void main(List<String> arguments) async {
   /// Handler to connect Middlewares
   var handler = const shelf.Pipeline()
       .addMiddleware(shelf.logRequests())
-      .addMiddleware(handleCors())
+      .addMiddleware(handleHeaders())
       .addHandler(app);
 
   /// instance of server

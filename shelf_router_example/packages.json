@@ -25,28 +25,28 @@
     "archive_url": "https://pub.dartlang.org/packages/http/versions/0.13.1.tar.gz"
   },
   {
-    "name": "provider",
-    "version": "5.0.0",
-    "archive_url": "https://pub.dartlang.org/packages/provider/versions/5.0.0.tar.gz"
+    "name": "flutter_hooks",
+    "version": "0.16.0",
+    "archive_url": "https://pub.dartlang.org/packages/flutter_hooks/versions/0.16.0.tar.gz"
   },
   {
-    "name": "flutter_bloc",
-    "version": "7.0.0",
-    "archive_url": "https://pub.dartlang.org/packages/flutter_bloc/versions/7.0.0.tar.gz"
+    "name": "clay_containers",
+    "version": "0.3.2",
+    "archive_url": "https://pub.dartlang.org/packages/clay_containers/versions/0.3.2.tar.gz"
   },
   {
-    "name": "flutter_slidable",
-    "version": "0.5.7",
-    "archive_url": "https://pub.dartlang.org/packages/flutter_slidable/versions/0.5.7.tar.gz"
+    "name": "auto_route",
+    "version": "1.0.2",
+    "archive_url": "https://pub.dartlang.org/packages/auto_route/versions/1.0.2.tar.gz"
   },
   {
-    "name": "animated_text_kit",
-    "version": "4.1.1",
-    "archive_url": "https://pub.dartlang.org/packages/animated_text_kit/versions/4.1.1.tar.gz"
+    "name": "cloud_firestore",
+    "version": "1.0.4",
+    "archive_url": "https://pub.dartlang.org/packages/cloud_firestore/versions/1.0.4.tar.gz"
   },
   {
-    "name": "http",
-    "version": "0.13.1",
-    "archive_url": "https://pub.dartlang.org/packages/http/versions/0.13.1.tar.gz"
+    "name": "appwrite",
+    "version": "0.4.0",
+    "archive_url": "https://pub.dartlang.org/packages/appwrite/versions/0.4.0.tar.gz"
   }
 ]

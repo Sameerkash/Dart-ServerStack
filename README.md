@@ -41,12 +41,12 @@ this project mimics the pub api for fetching packages, it implements appropriate
 
 - [x] Server using shelf
 - [x] Server using shelf_router with API endpoints
-- [x] serve static files
-- [x] use html mustache templating
-- [x] Server using shelf
+- [x] Serve static files
+- [x] Use mustache templating engine
 - [x] Compile dart to js using webdev for Client side
-- [x] CSS styling using SASS
-- [x] API using pub hosted specification
+- [x] CSS styling using SCSS
+- [x] API headers using pub hosted specification
+- [x] Add Tests to `shelf_router_example`
 
 ### Run Locally
 
