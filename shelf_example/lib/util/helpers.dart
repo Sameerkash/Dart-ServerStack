@@ -43,7 +43,6 @@ class RenderTamplate {
 
     /// fetches the particular file, for example, home.mustache.
     try {
-      // print(templates);
       return parsedTemaplate.renderString(values);
     } on mustache.TemplateException catch (e, st) {
       print(e);
@@ -52,6 +51,7 @@ class RenderTamplate {
   }
 }
 
+/// Load the list of vidoes from local json
 Future<Map<String, dynamic>> loadJsonFile() async {
   final jsonData = await File('public/videos.json')
       .readAsString()

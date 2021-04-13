@@ -109,17 +109,4 @@ body {
   font-size: 20px;
 }
 
-.property-image {
-  height: 6em;
-  width: 14em;
-  padding: 1em 2em;
-  position: Absolute;
-  top: 0px;
-  -webkit-transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
-  -o-transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
-  transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
-  background-image: url("https://cdn.photographylife.com/wp-content/uploads/2017/01/What-is-landscape-photography.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-}
 

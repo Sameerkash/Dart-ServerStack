@@ -17,6 +17,7 @@ void main(List<String> arguments) async {
     return shelf.Response.ok('Hello $param!');
   });
 
+  /// Handler to connect Middlewares
   var handler = const shelf.Pipeline()
       .addMiddleware(shelf.logRequests())
       .addMiddleware(handleCors())

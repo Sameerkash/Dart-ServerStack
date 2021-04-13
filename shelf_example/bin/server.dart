@@ -27,6 +27,7 @@ void main(List<String> args) async {
   /// static handler to serve css and json files placed in the public directory
   final staticHandler = createStaticHandler('public');
 
+  /// Handler to route requsts according to the url.path
   final cascadeHandler = shelf.Cascade()
       .add((request) async => staticHandler.call(request))
       .add((request) {
@@ -49,10 +50,12 @@ void main(List<String> args) async {
     }
   }).handler;
 
+  /// handler to add accomodate Middlewares
   var handler = const shelf.Pipeline()
       .addMiddleware(shelf.logRequests())
       .addHandler(cascadeHandler);
 
+  /// instance of server
   var server = await io.serve(handler, _hostname, port);
   print('Serving at http://${server.address.host}:${server.port}');
 }

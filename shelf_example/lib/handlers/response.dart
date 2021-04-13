@@ -1,5 +1,6 @@
 import 'package:shelf/shelf.dart' as shelf;
 
+/// Shelf reponse method to facilitate response sent by handlers
 shelf.Response htmlResponse(
   String content, {
   int status = 200,
@@ -12,5 +13,3 @@ shelf.Response htmlResponse(
       noReferrer ? 'no-referrer' : 'no-referrer-when-downgrade';
   return shelf.Response(status, body: content, headers: headers);
 }
-
-
