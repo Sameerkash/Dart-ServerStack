@@ -1,6 +1,6 @@
 # Dart Server Stack ✨🎯 🔨
 
-Sample code showcasing usuag of Dart server tsack using shelf, shelf router and webdev.
+Sample code showcasing usuag of Dart server stack using `shelf`, `shelf_router` and `webdev`.
 
 **Table of Contents**
 
